@@ -1,0 +1,38 @@
+﻿@{
+    <div class="container">
+        <style>
+            div.ridge {
+                border-style: ridge;
+                margin: 200px;
+                border-radius: 8px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 50px;
+                padding-right: 50px;
+                background-color: lightgrey;
+            }
+            
+            
+        </style>
+        <main role="main">
+            
+                <div class="ridge">
+                    <h3 align="center">VMS</h3>
+                    <h5 align="center"> What would you like to create?</h5>
+                    <div class="dropdown " align="center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Create Vehicle</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>@Html.ActionLink("Create Car", "Add", "Car")</li>
+                            <li>@Html.ActionLink("Create Boat", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Create Caravan", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Create Bike", "Index", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+                
+        </main>
+    </div>
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
